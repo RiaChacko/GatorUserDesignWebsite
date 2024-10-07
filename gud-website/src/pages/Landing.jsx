@@ -27,7 +27,7 @@ function Landing() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try{
-            const response = await axios.post('http://localhost:3000/api/signup',{email});
+            const response = await axios.post('gud-website-4-xip6.vercel.app/api/signup',{email});
             if(response.status === 201){
                 toast.success('Signed up successfully!', {
                     position: "top-right",
